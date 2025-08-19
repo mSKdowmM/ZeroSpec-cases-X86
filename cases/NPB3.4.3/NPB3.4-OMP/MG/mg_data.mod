@@ -1,0 +1,60 @@
+﻿!mod$ v1 sum:3ee5291173e41589
+module mg_data
+integer(4),parameter::nx_default=512_4
+integer(4),parameter::ny_default=512_4
+integer(4),parameter::nz_default=512_4
+integer(4),parameter::nit_default=20_4
+integer(4),parameter::lm=9_4
+integer(4),parameter::lt_default=9_4
+integer(4),parameter::debug_default=0_4
+integer(4),parameter::ndim1=9_4
+integer(4),parameter::ndim2=9_4
+integer(4),parameter::ndim3=9_4
+integer(4),parameter::kind2=4_4
+logical(4),parameter::convertdouble=.false._4
+character(11_8,1),parameter::compiletime="06 Aug 2025"
+character(5_8,1),parameter::npbversion="3.4.3"
+character(28_8,1),parameter::cs1="clang_wrapper.py --use-flang"
+character(5_8,1),parameter::cs2="$(FC)"
+character(6_8,1),parameter::cs3="(none)"
+character(6_8,1),parameter::cs4="(none)"
+character(12_8,1),parameter::cs5="-O3 -fopenmp"
+character(9_8,1),parameter::cs6="$(FFLAGS)"
+character(6_8,1),parameter::cs7="randi8"
+integer(4),parameter::nm=514_4
+integer(4),parameter::maxlevel=(10_4)
+integer(4),parameter::one=1_4
+integer(4),parameter::nv=135796744_4
+integer(4),parameter::nr=155501232_4
+integer(4)::nx(1_8:10_8)
+integer(4)::ny(1_8:10_8)
+integer(4)::nz(1_8:10_8)
+character(1_8,1)::class
+integer(4)::debug_vec(0_8:7_8)
+integer(4)::m1(1_8:10_8)
+integer(4)::m2(1_8:10_8)
+integer(4)::m3(1_8:10_8)
+integer(4)::lt
+integer(4)::lb
+integer(4)::ir(1_8:10_8)
+integer(4)::is1
+integer(4)::is2
+integer(4)::is3
+integer(4)::ie1
+integer(4)::ie2
+integer(4)::ie3
+real(8)::starts(1_8:514_8)
+integer(4),parameter::m=515_4
+logical(4)::timeron
+integer(4),parameter::t_init=1_4
+integer(4),parameter::t_bench=2_4
+integer(4),parameter::t_psinv=4_4
+integer(4),parameter::t_resid=5_4
+integer(4),parameter::t_rprj3=7_4
+integer(4),parameter::t_interp=8_4
+integer(4),parameter::t_norm2=9_4
+integer(4),parameter::t_mg3p=3_4
+integer(4),parameter::t_resid2=6_4
+integer(4),parameter::t_comm3=10_4
+integer(4),parameter::t_last=10_4
+end
